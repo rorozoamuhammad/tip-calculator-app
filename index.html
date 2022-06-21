@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- link css -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <main>
+      <div class="calc">
+        <p>Bill</p>
+        <div class="input">
+          <img src="images/icon-dollar.svg" alt="icon-dollar">
+          <input type="tel" placeholder="0" maxlength="10" id="inputUtama"><br>
+        </div>
+        <p>Select Tip %</p>
+        <form>
+          <button type="button" id="btn1">5%</button>
+          <button type="button" id="btn2">10%</button>
+          <button type="button" id="btn3">15%</button>
+          <button type="button" id="btn4">25%</button>
+          <button type="button" id="btn5">50%</button>
+          <input type="tel" placeholder="Custom" maxlength="3" id="btnInput">
+        </form>
+        <div class="validation">
+          <p>Number of People</p>
+          <p id="validation">can't be zero</p>
+        </div>
+        <div class="person">
+          <img src="images/icon-person.svg" alt="icon-person">
+          <input type="tel" placeholder="0" maxlength="10" id="person">
+        </div>
+      </div>
+      <div class="total">
+        <div class="tip">
+          <div class="teks">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="uang">
+            <img src="images/icon-dollar.svg" alt="icon-dollar">
+            <h1 id="tipAmount">0.00</h1>
+          </div>
+        </div>
+        <div class="tipTotal">
+          <div class="teks">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="uang">
+            <img src="images/icon-dollar.svg" alt="icon-dollar">
+            <h1 id="tipTotal">0.00</h1>
+          </div>
+        </div>
+        <button type="button" id="reset">Reset</button>
+      </div>
+    </main>
+  </header>
+  
+  <!-- jquery -->
+  <script src="jquery/jquery-3.6.0.min.js"></script>
+  
+  <!-- js -->
+  <script src="js/script.js"></script>
+</body>
+</html>
